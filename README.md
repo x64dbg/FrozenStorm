@@ -31,7 +31,7 @@ If you use the provided C++ wrapper it looks like this:
 
 ```c++
 #include <stdio.h>
-#include "FrozenStorm.h"
+#include "FrozenStormWrapper.h"
 
 void sha1example()
 {
