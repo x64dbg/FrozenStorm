@@ -1,5 +1,7 @@
 ![logo](https://i.imgur.com/EfyWPnu.png)
 
+[![Build status](https://ci.appveyor.com/api/projects/status/37qtgbrx20nsd0it?svg=true)](https://ci.appveyor.com/project/mrexodia/frozenstorm)
+
 FrozenStorm is a project to make cryptography, hashing, checksumming, compression and transformation algorithms available over a unified interface.
 
 ### Easy in C
