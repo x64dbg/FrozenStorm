@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\openssl">
+      <UniqueIdentifier>{2ae2b04c-faa5-40c9-9fd2-55cb16822b41}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DllMain.cpp">
@@ -22,6 +25,231 @@
   <ItemGroup>
     <ClInclude Include="FrozenStorm.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\aes.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\asn1.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\asn1_mac.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\asn1t.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\bio.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\blowfish.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\bn.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\buffer.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\camellia.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\cast.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\cmac.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\cms.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\comp.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\conf.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\conf_api.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\crypto.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\des.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\des_old.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\dh.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\dsa.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\dso.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\dtls1.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\e_os2.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ebcdic.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ec.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ecdh.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ecdsa.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\engine.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\err.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\evp.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\hmac.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\idea.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\krb5_asn.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\kssl.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\lhash.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\md4.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\md5.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\mdc2.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\modes.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\obj_mac.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\objects.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ocsp.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\opensslconf.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\opensslv.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ossl_typ.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\pem.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\pem2.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\pkcs7.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\pkcs12.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\pqueue.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\rand.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\rc2.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\rc4.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ripemd.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\rsa.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\safestack.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\seed.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\sha.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\srp.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\srtp.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ssl.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ssl2.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ssl3.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ssl23.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\stack.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\symhacks.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\tls1.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ts.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\txt_db.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ui.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\ui_compat.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\whrlpool.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\x509.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\x509_vfy.h">
+      <Filter>Header Files\openssl</Filter>
+    </ClInclude>
+    <ClInclude Include="openssl\openssl\x509v3.h">
+      <Filter>Header Files\openssl</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

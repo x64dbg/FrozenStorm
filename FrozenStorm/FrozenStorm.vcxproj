@@ -41,9 +41,13 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin\x32\</OutDir>
+    <IncludePath>$(ProjectDir)openssl;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)openssl;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)bin\x64\</OutDir>
+    <IncludePath>$(ProjectDir)openssl;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)openssl;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -58,6 +62,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libeay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -73,6 +78,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libeay64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -80,6 +86,81 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FrozenStorm.h" />
+    <ClInclude Include="openssl\openssl\aes.h" />
+    <ClInclude Include="openssl\openssl\asn1.h" />
+    <ClInclude Include="openssl\openssl\asn1t.h" />
+    <ClInclude Include="openssl\openssl\asn1_mac.h" />
+    <ClInclude Include="openssl\openssl\bio.h" />
+    <ClInclude Include="openssl\openssl\blowfish.h" />
+    <ClInclude Include="openssl\openssl\bn.h" />
+    <ClInclude Include="openssl\openssl\buffer.h" />
+    <ClInclude Include="openssl\openssl\camellia.h" />
+    <ClInclude Include="openssl\openssl\cast.h" />
+    <ClInclude Include="openssl\openssl\cmac.h" />
+    <ClInclude Include="openssl\openssl\cms.h" />
+    <ClInclude Include="openssl\openssl\comp.h" />
+    <ClInclude Include="openssl\openssl\conf.h" />
+    <ClInclude Include="openssl\openssl\conf_api.h" />
+    <ClInclude Include="openssl\openssl\crypto.h" />
+    <ClInclude Include="openssl\openssl\des.h" />
+    <ClInclude Include="openssl\openssl\des_old.h" />
+    <ClInclude Include="openssl\openssl\dh.h" />
+    <ClInclude Include="openssl\openssl\dsa.h" />
+    <ClInclude Include="openssl\openssl\dso.h" />
+    <ClInclude Include="openssl\openssl\dtls1.h" />
+    <ClInclude Include="openssl\openssl\ebcdic.h" />
+    <ClInclude Include="openssl\openssl\ec.h" />
+    <ClInclude Include="openssl\openssl\ecdh.h" />
+    <ClInclude Include="openssl\openssl\ecdsa.h" />
+    <ClInclude Include="openssl\openssl\engine.h" />
+    <ClInclude Include="openssl\openssl\err.h" />
+    <ClInclude Include="openssl\openssl\evp.h" />
+    <ClInclude Include="openssl\openssl\e_os2.h" />
+    <ClInclude Include="openssl\openssl\hmac.h" />
+    <ClInclude Include="openssl\openssl\idea.h" />
+    <ClInclude Include="openssl\openssl\krb5_asn.h" />
+    <ClInclude Include="openssl\openssl\kssl.h" />
+    <ClInclude Include="openssl\openssl\lhash.h" />
+    <ClInclude Include="openssl\openssl\md4.h" />
+    <ClInclude Include="openssl\openssl\md5.h" />
+    <ClInclude Include="openssl\openssl\mdc2.h" />
+    <ClInclude Include="openssl\openssl\modes.h" />
+    <ClInclude Include="openssl\openssl\objects.h" />
+    <ClInclude Include="openssl\openssl\obj_mac.h" />
+    <ClInclude Include="openssl\openssl\ocsp.h" />
+    <ClInclude Include="openssl\openssl\opensslconf.h" />
+    <ClInclude Include="openssl\openssl\opensslv.h" />
+    <ClInclude Include="openssl\openssl\ossl_typ.h" />
+    <ClInclude Include="openssl\openssl\pem.h" />
+    <ClInclude Include="openssl\openssl\pem2.h" />
+    <ClInclude Include="openssl\openssl\pkcs12.h" />
+    <ClInclude Include="openssl\openssl\pkcs7.h" />
+    <ClInclude Include="openssl\openssl\pqueue.h" />
+    <ClInclude Include="openssl\openssl\rand.h" />
+    <ClInclude Include="openssl\openssl\rc2.h" />
+    <ClInclude Include="openssl\openssl\rc4.h" />
+    <ClInclude Include="openssl\openssl\ripemd.h" />
+    <ClInclude Include="openssl\openssl\rsa.h" />
+    <ClInclude Include="openssl\openssl\safestack.h" />
+    <ClInclude Include="openssl\openssl\seed.h" />
+    <ClInclude Include="openssl\openssl\sha.h" />
+    <ClInclude Include="openssl\openssl\srp.h" />
+    <ClInclude Include="openssl\openssl\srtp.h" />
+    <ClInclude Include="openssl\openssl\ssl.h" />
+    <ClInclude Include="openssl\openssl\ssl2.h" />
+    <ClInclude Include="openssl\openssl\ssl23.h" />
+    <ClInclude Include="openssl\openssl\ssl3.h" />
+    <ClInclude Include="openssl\openssl\stack.h" />
+    <ClInclude Include="openssl\openssl\symhacks.h" />
+    <ClInclude Include="openssl\openssl\tls1.h" />
+    <ClInclude Include="openssl\openssl\ts.h" />
+    <ClInclude Include="openssl\openssl\txt_db.h" />
+    <ClInclude Include="openssl\openssl\ui.h" />
+    <ClInclude Include="openssl\openssl\ui_compat.h" />
+    <ClInclude Include="openssl\openssl\whrlpool.h" />
+    <ClInclude Include="openssl\openssl\x509.h" />
+    <ClInclude Include="openssl\openssl\x509v3.h" />
+    <ClInclude Include="openssl\openssl\x509_vfy.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
