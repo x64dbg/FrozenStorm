@@ -30,6 +30,9 @@ void sha1example()
 If you use the provided C++ wrapper it looks like this:
 
 ```c++
+#include <stdio.h>
+#include "FrozenStorm.h"
+
 void sha1example()
 {
     auto data = "sha1";
