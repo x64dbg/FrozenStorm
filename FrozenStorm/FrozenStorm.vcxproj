@@ -85,7 +85,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DllMain.cpp" />
-    <ClCompile Include="FrozenStorm_hash.cpp" />
+    <ClCompile Include="FrozenStorm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FrozenStorm.h" />

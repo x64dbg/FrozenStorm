@@ -21,7 +21,7 @@
     <ClCompile Include="DllMain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FrozenStorm_hash.cpp">
+    <ClCompile Include="FrozenStorm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
