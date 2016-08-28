@@ -20,5 +20,7 @@ FROZEN_API void hash_sha224(const void* data, size_t datasize, unsigned char** h
 FROZEN_API void hash_sha256(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
 FROZEN_API void hash_sha384(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
 FROZEN_API void hash_sha512(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
+FROZEN_API void hash_adler32(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
+FROZEN_API void hash_crc32(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
 
 #endif //FROZENSTORM_H

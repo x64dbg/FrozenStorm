@@ -16,6 +16,9 @@
     <Filter Include="Header Files\openssl">
       <UniqueIdentifier>{2ae2b04c-faa5-40c9-9fd2-55cb16822b41}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\zlib">
+      <UniqueIdentifier>{4c06586b-bfc9-48c7-bcec-4a4ee1ec2a19}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DllMain.cpp">
@@ -256,6 +259,12 @@
     </ClInclude>
     <ClInclude Include="FrozenStormWrapper.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zconf.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zlib.h">
+      <Filter>Header Files\zlib</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

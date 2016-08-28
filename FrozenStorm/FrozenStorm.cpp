@@ -3,6 +3,7 @@
 #include <openssl/md4.h>
 #include <openssl/md5.h>
 #include <openssl/sha.h>
+#include <zlib.h>
 
 #define HASH_ALLOC(length) *hash = (unsigned char*)frozen_alloc(*hashsize = length)
 #define HDATA (const unsigned char*)data
@@ -66,4 +67,18 @@ void hash_sha512(const void* data, size_t datasize, unsigned char** hash, size_t
 {
     HASH_ALLOC(SHA512_DIGEST_LENGTH);
     SHA512(HDATA, HSIZE, HHASH);
+}
+
+void hash_adler32(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize)
+{
+    auto checksum = adler32(0L, (const Bytef*)data, datasize);
+    HASH_ALLOC(sizeof(checksum));
+    memcpy(*hash, &checksum, sizeof(checksum));
+}
+
+void hash_crc32(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize)
+{
+    auto checksum = crc32(0L, (const Bytef*)data, datasize);
+    HASH_ALLOC(sizeof(checksum));
+    memcpy(*hash, &checksum, sizeof(checksum));
 }

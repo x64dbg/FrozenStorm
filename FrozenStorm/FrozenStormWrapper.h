@@ -36,6 +36,8 @@ namespace FrozenStorm
     FS_WRAPHASH(hash_sha256);
     FS_WRAPHASH(hash_sha384);
     FS_WRAPHASH(hash_sha512);
+    FS_WRAPHASH(hash_adler32);
+    FS_WRAPHASH(hash_crc32);
 };
 
 #endif //FROZENSTORMWRAPPER_H
