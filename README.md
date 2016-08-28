@@ -2,29 +2,38 @@
 
 FrozenStorm is a project to make cryptography, hashing, checksumming, compression and transformation algorithms available over a unified interface.
 
+### Easy in C
+
+FrozenStorm has a simple an unified C interface for its various components. This is how you generate a SHA1 hash and print it to the console in C:
+
+```c
+#include <stdio.h>
+#include "FrozenStorm.h"
+
+void sha1example()
+{
+    const char* data = "sha1";
+    unsigned char* hash;
+    size_t hashsize, i;
+
+    hash_sha1(data, strlen(data), &hash, &hashsize);
+    for (i = 0; i < hashsize; i++)
+        printf("%02x", hash[i]);
+    puts("");
+
+    frozen_free(hash);
+}
 ```
-#ifndef FROZENSTORM_H
-#define FROZENSTORM_H
 
-#include <windows.h>
+### Even easier in C++
 
-#ifdef BUILD_FROZENSTORM
-#define FROZEN_API extern "C" __declspec(dllexport)
-#else
-#define FROZEN_API extern "C" __declspec(dllimport)
-#endif //BUILD_FROZENSTORM
+If you use the provided C++ wrapper it looks like this:
 
-FROZEN_API void* frozen_alloc(size_t size);
-FROZEN_API void frozen_free(void* ptr);
-
-FROZEN_API void hash_mdc2(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
-FROZEN_API void hash_md4(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
-FROZEN_API void hash_md5(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
-FROZEN_API void hash_sha1(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
-FROZEN_API void hash_sha224(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
-FROZEN_API void hash_sha256(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
-FROZEN_API void hash_sha384(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
-FROZEN_API void hash_sha512(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize);
-
-#endif //FROZENSTORM_H
+```c++
+void sha1example()
+{
+    auto data = "sha1";
+    auto hash = FrozenStorm::hash_sha1(data, strlen(data));
+    puts(FrozenStorm::hash_ToString(hash).c_str());
+}
 ```
