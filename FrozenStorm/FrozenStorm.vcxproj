@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FrozenStorm.h" />
+    <ClInclude Include="FrozenStormWrapper.h" />
     <ClInclude Include="openssl\openssl\aes.h" />
     <ClInclude Include="openssl\openssl\asn1.h" />
     <ClInclude Include="openssl\openssl\asn1t.h" />

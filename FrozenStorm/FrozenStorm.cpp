@@ -16,7 +16,8 @@ void* frozen_alloc(size_t size)
 
 void frozen_free(void* ptr)
 {
-    GlobalFree(ptr);
+    if(ptr)
+        GlobalFree(ptr);
 }
 
 void hash_mdc2(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize)

@@ -254,5 +254,8 @@
     <ClInclude Include="openssl\openssl\x509v3.h">
       <Filter>Header Files\openssl</Filter>
     </ClInclude>
+    <ClInclude Include="FrozenStormWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
