@@ -71,14 +71,14 @@ void hash_sha512(const void* data, size_t datasize, unsigned char** hash, size_t
 
 void hash_adler32(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize)
 {
-    auto checksum = adler32(0L, (const Bytef*)data, datasize);
+    auto checksum = adler32(0L, (const Bytef*)data, uInt(datasize));
     HASH_ALLOC(sizeof(checksum));
     memcpy(*hash, &checksum, sizeof(checksum));
 }
 
 void hash_crc32(const void* data, size_t datasize, unsigned char** hash, size_t* hashsize)
 {
-    auto checksum = crc32(0L, (const Bytef*)data, datasize);
+    auto checksum = crc32(0L, (const Bytef*)data, uInt(datasize));
     HASH_ALLOC(sizeof(checksum));
     memcpy(*hash, &checksum, sizeof(checksum));
 }
