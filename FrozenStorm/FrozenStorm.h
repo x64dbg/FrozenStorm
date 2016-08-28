@@ -1,0 +1,4 @@
+#ifndef FROZENSTORM_H
+#define FROZENSTORM_H
+
+#endif //FROZENSTORM_H
