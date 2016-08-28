@@ -5,7 +5,7 @@
 #include "FrozenStorm.h"
 
 #define FS_WRAPHASH(hashfunc) \
-std::vector<unsigned char> hashfunc(const void* data, size_t datasize) { \
+inline std::vector<unsigned char> hashfunc(const void* data, size_t datasize) { \
     unsigned char* hash = nullptr; \
     size_t hashsize = 0; \
     ::hashfunc(data, datasize, &hash, &hashsize); \
@@ -14,10 +14,9 @@ std::vector<unsigned char> hashfunc(const void* data, size_t datasize) { \
     ::frozen_free(hash); \
     return std::move(result); }
 
-class FrozenStorm
+namespace FrozenStorm
 {
-public:
-    std::string hashToString(const std::vector<unsigned char> & hash) const
+    inline std::string hash_ToString(const std::vector<unsigned char> & hash)
     {
         std::string result;
         for(size_t i = 0; i < hash.size(); i++)
